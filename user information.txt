@@ -1,0 +1,9 @@
+Admin
+
+- username : hardyanto123
+- password : 1234
+
+Customer
+
+- username : asep123
+- password : 1234

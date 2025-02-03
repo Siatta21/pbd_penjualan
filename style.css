@@ -1,0 +1,132 @@
+/* navbar */
+nav {
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5em;
+    position: relative;
+}
+
+nav h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto 0;
+    border-radius: 4px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    color: #e0e0e0;
+}
+
+/* Dashboard */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+.judulSection h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.judulSection h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+}
+
+a button {
+    margin-right: 5px;
+}
