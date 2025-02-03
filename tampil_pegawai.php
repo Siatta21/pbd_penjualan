@@ -115,7 +115,7 @@ $pegawai = new Pegawai();
             <th>Id Pegawai</th>
             <th>Nama Pegawai</th>
             <th>Jabatan</th>
-            <th>Bekerja Di Toko</th>
+            <th>Toko Bekerja</th>
             <th width="150">Aksi</th>
         </tr>
         <?php
@@ -125,7 +125,7 @@ $pegawai = new Pegawai();
                 <td><?php echo $data_pegawai["nomor_pegawai"]; ?></td>
                 <td><?php echo $data_pegawai["nama_pegawai"]; ?> </td>
                 <td><?php echo $data_pegawai["jabatan"]; ?> </td>
-                <td><?php echo $data_pegawai["id_cabang"]; ?> </td>
+                <td><?php echo $data_pegawai["nama_toko"]; ?> </td>
                 <td width="150" align="center">
                     <a href="form_ubah_pegawai.php?id=<?php echo $data_pegawai['nomor_pegawai']; ?>"><button>EDIT</button></a> |
                     <a href="update_pegawai.php?id=<?php echo $data_pegawai['nomor_pegawai']; ?>&aksi=hapus"><button>HAPUS</button></a>

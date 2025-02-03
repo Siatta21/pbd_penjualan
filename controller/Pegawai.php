@@ -19,9 +19,10 @@ class Pegawai
     //Fungsi untuk menampilkan data pegawai
     public function tampil_pegawai()
     {
-        $query = "SELECT nomor_pegawai, nama_pegawai, jabatan, password, id_cabang
-                  FROM pegawai 
-                  ORDER BY nomor_pegawai";
+        $query = "SELECT pegawai.nomor_pegawai, pegawai.nama_pegawai, pegawai.jabatan, 
+                   cabang.nama_toko 
+            FROM pegawai 
+            JOIN cabang ON pegawai.id_cabang = cabang.id_cabang";
         $result = mysqli_query($this->db->get_koneksi(), $query);
         $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -78,7 +79,7 @@ class Pegawai
                      nama_pegawai = '$this->nama_pegawai',
                      jabatan = '$this->jabatan',
                      password = '$this->password',
-                     password = '$this->id_cabang'
+                     id_cabang = '$this->id_cabang'
                   WHERE nomor_pegawai = '$this->nomor_pegawai' ";
 
         $result = mysqli_query($this->db->get_koneksi(), $query);
